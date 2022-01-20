@@ -26,3 +26,9 @@
 * deadline monotonic scheduling
 ### simple hello.c and thread program using ESP32
 
+
+## day-4
+### FREE_RTOS
+
+* 1-Create simple task program.
+* 2-Create two task with different priority.
