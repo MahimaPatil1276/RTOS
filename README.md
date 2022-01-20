@@ -32,3 +32,13 @@
 
 * 1-Create simple task program.
 * 2-Create two task with different priority.
+
+## day-5
+
+* delay task
+* alarm task
+* stack rmain space task
+* affinity task
+* priority task
+* queue task
+* semaphore task 
