@@ -42,3 +42,9 @@
 * priority task
 * queue task
 * semaphore task 
+
+## day-6
+
+* event_group
+* timers
+* socket_program
