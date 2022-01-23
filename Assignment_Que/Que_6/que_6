@@ -1,0 +1,11 @@
+Que.6)-> What are the maximum number of tasks that can be created on the RTOS you are using?
+Is it limited by the RTOS design or underlying hardware resources or both.
+
+Ans.->
+
+    i]Heap is RAM. FreeRTOS uses the heap for the stack of each task and for storing variables. 
+    It also uses the heap for storing all of the CPU registers when the task is switched. 
+    The more tasks you create, the more heap space that is required.
+
+    ii]Just try increasing the "configTOTAL_HEAP_SIZE" defined in FreeRTOSConfig.h. 
+    There is a function xPortGetFreeHeapSize() that returns the remaining free heap size. 

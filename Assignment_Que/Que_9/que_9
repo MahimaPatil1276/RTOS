@@ -1,0 +1,12 @@
+Que.9] Find the fields that are maintained in the Task Control Block / Process Control Block
+       of the RTOS you are using.
+
+Ans.->
+
+    i) A process control block (PCB) is a data structure used by computer operating systems to
+       store all the information about a process. It is also known as a process descriptor. 
+       When a process is created (initialized or installed), the operating system creates a 
+       corresponding process control block.This specifies the process state i.e. new, ready, 
+       running, waiting or terminated.
+    ii) CPU Scheduling Information–information scheduling CPU time. Memory Management 
+        Information–page table, memory limits, segment table. 

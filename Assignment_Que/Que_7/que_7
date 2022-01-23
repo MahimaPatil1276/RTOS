@@ -1,0 +1,11 @@
+Que.7] What is the scheduling algorithm used by your RTOS?
+
+Ans.->
+    i)   priority-based preemptive scheduling
+    ii) The scheduling algorithm is the software routine that decides which Ready state task 
+        to transition into the Running state.
+    iii) There are many scheduling algorithms that can be used for scheduling task execution 
+         on a CPU. They can be classified into two main types: 
+      A] Preemptive scheduling algorithms and 
+      B] Non-preemptive scheduling algorithms
+
