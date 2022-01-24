@@ -1,0 +1,18 @@
+Que.14] Find the tick frequency configuration for your RTOS.
+
+Ans.->
+
+    i)RTOSes such as FreeRTOS configure a time source to generate a periodic interrupt which
+     is called the tick interrupt.  The interrupt is used to unblock tasks that are blocked 
+     with a time out, and to switch between tasks (time slice) that run at an equal priority.
+
+    i)Time is measured in ‘tick periods’, which is the number of tick interrupts.  So, for 
+      example, a task may want to block using the vTaskDelay() API function, and when it does 
+      it specifies how long it wants to block for in ticks.  For example, vTaskDelay( 100 ) 
+      means block for 100 ticks.  How long 100 ticks actually is depends on the frequency of 
+      the tick interrupt.  You can convert ms into tick by dividing by the tick rate in ms, 
+      so 100ms is ( 100 / portTICKRATEMS ).
+
+    iii) If you set the frequency high then you can have a higher resolution time, at the
+         expense of having to process more tick interrupt.  Normally an application would 
+         set the tick frequency at around about 100Hz.
